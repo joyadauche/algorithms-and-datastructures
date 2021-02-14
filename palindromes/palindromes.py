@@ -25,7 +25,22 @@ def isPalindromeTwo(string):
         reversed_string.append(string[s])
     return string == "".join(reversed_string)
 ## call function:
-print(isPalindromeTwo("aba"))
-print(isPalindromeTwo("ojo"))
-print(isPalindromeTwo("bless"))
-print(isPalindromeTwo("a"))
+# print(isPalindromeTwo("aba"))
+# print(isPalindromeTwo("ojo"))
+# print(isPalindromeTwo("bless"))
+# print(isPalindromeTwo("a"))
+
+# 3.
+def isPalindromeThree(string):
+    left_index = 0
+    right_index = len(string) - 1
+    while left_index < right_index:
+        if string[left_index] != string[right_index]:
+            return False
+        left_index += 1
+        right_index -= 1
+    return True
+print(isPalindromeThree("aba"))
+print(isPalindromeThree("ojo"))
+print(isPalindromeThree("bless"))
+print(isPalindromeThree("a"))
