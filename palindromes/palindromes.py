@@ -4,11 +4,6 @@ def isPalindromeOne(string):
     for s in reversed(range(len(string))):
         reversed_string += string[s]
     return string == reversed_string
-## call function:
-# print(isPalindromeOne("aba"))
-# print(isPalindromeOne("ojo"))
-# print(isPalindromeOne("bless"))
-# print(isPalindromeOne("a"))
 ## Time Complexity: O(n^2)
 # In python, strings are immutable. Hence, when I add a character to the string, 
 # it means I am recreating the whole string. This operation is done in linear time, O(n).
@@ -24,11 +19,6 @@ def isPalindromeTwo(string):
     for s in reversed(range(len(string))):
         reversed_string.append(string[s])
     return string == "".join(reversed_string)
-## call function:
-# print(isPalindromeTwo("aba"))
-# print(isPalindromeTwo("ojo"))
-# print(isPalindromeTwo("bless"))
-# print(isPalindromeTwo("a"))
 
 # 3.
 def isPalindromeThree(string):
